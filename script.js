@@ -61,7 +61,7 @@ $(document).ready(()=>{
         if(i<=400 && arr[i]){
             return new Promise((resolve,reject)=>{
             $("#step").html('Step : '+ i +' is still white so it is prime and set to green ,all its multiple set to red'); 
-            $("#prime").append(i+',')
+            $("#prime").append(' '+i+',')
             setPrime(i);
             setTimeout(()=>{
                 setNonPrimePromise([i+i,i])},500)
