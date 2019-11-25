@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css"/>
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+        <table id="table">
+
+        </table>
+        </div>
+        <div class="col-md-6">
+            <h1>Sieve of Eratosthenes</h1>
+            <p>
+                Sieve of Eratosthenes is a famous simple algorithm use to find all the primes nos. upto certain limit.
+            </p>
+            <h3>Algorithm:</h3>
+            <ol>
+                <li>
+                    Intialize an array of size n with all the values 1(where n is limit upto which prime number needed).
+                </li>
+                <li>
+                    Set arr[0] and arr[1] as 0 as they are not prime.
+                </li>
+                <li>
+                    Intialize p as 2.
+                </li>
+                <li>
+                    While p*p is less than equal to n.
+                    <ol type="A">
+                        <li>If arr[p]==1
+                            <ol type="i">
+                                <li>Intialize j to p+p</li>
+                                <li>while j is less than equal to n
+                                    <ol type="I">
+                                        <li>arr[j]=0</li>
+                                        <li>j=j+p</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>p=p+1</li>
+                    </ol>
+                </li>
+            </ol>
+            <button cl id="start" class="btn btn-info form-control">Start Visulaization</button>
+            <br/>
+            <br/>
+            <button id="reset" class="btn btn-info form-control">Reset</button>
+            <br/>
+            <br/>
+            <p id="step"></p>
+            <p id="prime"></p>
+        </div>
+            
+    </div>
+    </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

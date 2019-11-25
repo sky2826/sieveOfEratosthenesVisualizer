@@ -1,0 +1,26 @@
+/* input{
+    width:10px;
+    height:10px;
+    padding: 0px;
+    margin: 0px;
+  } */
+ td{
+    border: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+table{
+    border-collapse: collapse;
+}
+body{
+  padding:0px;
+  margin:0px;
+  border:0px;
+}
+
+#step,#prime{
+ font-weight: bold; 
+}
