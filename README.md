@@ -3,4 +3,4 @@ Sieve of Eratosthenes is famous algorithm to find the all the primes nos. from 1
 
 Link : https://sky2826.github.io/sieveOfEratosthenesVisualizer/index.html
 
-Visit on Dekstop of Laptop for best view.
+View on Dekstop or Laptop for best view.
